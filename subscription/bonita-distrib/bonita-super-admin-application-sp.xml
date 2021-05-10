@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<applications xmlns="http://documentation.bonitasoft.com/application-xml-schema/1.1">
-    <application token="superAdminApp" version="1.0" internalProfile="SUPER_ADMIN" homePage="user-list" state="ACTIVATED" layout="custompage_layoutBonita" theme="custompage_themeBonita">
+<applications xmlns="http://documentation.bonitasoft.com/application-xml-schema/1.0">
+    <application token="superAdminApp" version="1.0" profile="_BONITA_INTERNAL_SUPER_ADMIN" homePage="user-list" state="ACTIVATED" layout="custompage_layoutBonita" theme="custompage_themeBonita">
         <displayName>Bonita Super Administrator Application</displayName>
         <iconPath>bonita-super-admin-application.png</iconPath>
         <applicationPages>
