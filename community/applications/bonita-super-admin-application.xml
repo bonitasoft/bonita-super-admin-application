@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<applications xmlns="http://documentation.bonitasoft.com/application-xml-schema/1.1">
-    <application token="superAdminApp" version="1.0" internalProfile="SUPER_ADMIN" homePage="user-list" state="ACTIVATED" layout="custompage_BonitaLayoutV8" theme="custompage_themeBonita">
+<applications xmlns="http://documentation.bonitasoft.com/application-xml-schema/1.0">
+    <application token="superAdminApp" version="1.0" profile="_BONITA_INTERNAL_PROFILE_SUPER_ADMIN" homePage="user-list" state="ACTIVATED" layout="custompage_BonitaLayoutV8" theme="custompage_themeBonita">
         <displayName>Bonita Super Administrator Application</displayName>
         <iconPath>bonita-super-admin-application.png</iconPath>
         <applicationPages>
-            <applicationPage customPage="custompage_tenantStatusBonitaV1" token="bpm-services"/>
-            <applicationPage customPage="custompage_adminUserDetailsBonita" token="user-details"/>
-            <applicationPage customPage="custompage_adminApplicationListBonita" token="application-list"/>
-            <applicationPage customPage="custompage_adminApplicationDetailsBonita" token="application-details"/>
-            <applicationPage customPage="custompage_adminBDMBonita" token="bdm"/>
-            <applicationPage customPage="custompage_adminUserListBonitaV1" token="user-list"/>
-            <applicationPage customPage="custompage_adminGroupListBonitaV2" token="group-list"/>
-            <applicationPage customPage="custompage_adminRoleListBonitaV1" token="role-list"/>
-            <applicationPage customPage="custompage_adminProfileListBonitaV1" token="profile-list"/>
-            <applicationPage customPage="custompage_adminInstallExportOrganizationBonitaV1" token="install-export-organization"/>
-            <applicationPage customPage="custompage_adminResourceListBonitaV1" token="resource-list"/>
+            <applicationPage customPage="custompage_tenantStatusBonitaV1" token="bpm-services" />
+            <applicationPage customPage="custompage_adminUserDetailsBonita" token="user-details" />
+            <applicationPage customPage="custompage_adminApplicationListBonita" token="application-list" />
+            <applicationPage customPage="custompage_adminApplicationDetailsBonita" token="application-details" />
+            <applicationPage customPage="custompage_adminBDMBonita" token="bdm" />
+            <applicationPage customPage="custompage_adminUserListBonitaV1" token="user-list" />
+            <applicationPage customPage="custompage_adminGroupListBonitaV2" token="group-list" />
+            <applicationPage customPage="custompage_adminRoleListBonitaV1" token="role-list" />
+            <applicationPage customPage="custompage_adminProfileListBonitaV1" token="profile-list" />
+            <applicationPage customPage="custompage_adminInstallExportOrganizationBonitaV1" token="install-export-organization" />
+            <applicationPage customPage="custompage_adminResourceListBonitaV1" token="resource-list" />
         </applicationPages>
         <applicationMenus>
             <applicationMenu applicationPage="bpm-services">
