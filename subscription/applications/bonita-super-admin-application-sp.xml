@@ -9,12 +9,12 @@
             <applicationPage customPage="custompage_adminApplicationListBonita" token="application-list"/>
             <applicationPage customPage="custompage_adminApplicationDetailsBonita" token="application-details"/>
             <applicationPage customPage="custompage_adminBDMBonita" token="bdm"/>
-            <applicationPage customPage="custompage_adminUserListBonitaV1" token="user-list"/>
+            <applicationPage customPage="custompage_adminUserListBonitaV2" token="user-list"/>
             <applicationPage customPage="custompage_adminGroupListBonitaV2" token="group-list"/>
-            <applicationPage customPage="custompage_adminRoleListBonitaV1" token="role-list"/>
-            <applicationPage customPage="custompage_adminProfileListBonitaV1" token="profile-list"/>
+            <applicationPage customPage="custompage_adminRoleListBonitaV2" token="role-list"/>
+            <applicationPage customPage="custompage_adminProfileListBonitaV2" token="profile-list"/>
             <applicationPage customPage="custompage_adminInstallExportOrganizationBonitaV1" token="install-export-organization"/>
-            <applicationPage customPage="custompage_adminResourceListBonitaV1" token="resource-list"/>
+            <applicationPage customPage="custompage_adminResourceListBonitaV2" token="resource-list"/>
             <applicationPage customPage="custompage_adminLicenseBonita" token="license"/>
         </applicationPages>
         <applicationMenus>
