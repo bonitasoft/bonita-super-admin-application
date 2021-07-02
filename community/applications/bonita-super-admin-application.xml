@@ -4,7 +4,7 @@
         <displayName>Bonita Super Administrator Application</displayName>
         <iconPath>bonita-super-admin-application.png</iconPath>
         <applicationPages>
-            <applicationPage customPage="custompage_tenantStatusBonitaV1" token="bpm-services"/>
+            <applicationPage customPage="custompage_tenantStatusBonitaV2" token="bpm-services"/>
             <applicationPage customPage="custompage_adminUserDetailsBonita" token="user-details"/>
             <applicationPage customPage="custompage_adminApplicationListBonita" token="application-list"/>
             <applicationPage customPage="custompage_adminApplicationDetailsBonita" token="application-details"/>
