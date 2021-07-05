@@ -5,9 +5,9 @@
         <iconPath>bonita-super-admin-application.png</iconPath>
         <applicationPages>
             <applicationPage customPage="custompage_tenantStatusBonita" token="bpm-services"/>
-            <applicationPage customPage="custompage_adminUserDetailsBonita" token="user-details"/>
+            <applicationPage customPage="custompage_adminUserDetailsBonita" token="admin-user-details"/>
             <applicationPage customPage="custompage_adminApplicationListBonita" token="application-list"/>
-            <applicationPage customPage="custompage_adminApplicationDetailsBonita" token="application-details"/>
+            <applicationPage customPage="custompage_adminApplicationDetailsBonita" token="admin-application-details"/>
             <applicationPage customPage="custompage_adminBDMBonita" token="bdm"/>
             <applicationPage customPage="custompage_adminUserListBonita" token="user-list"/>
             <applicationPage customPage="custompage_adminGroupListBonita" token="group-list"/>
