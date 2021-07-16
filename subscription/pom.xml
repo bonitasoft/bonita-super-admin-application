@@ -15,7 +15,7 @@
 	<packaging>pom</packaging>
 
 	<name>Bonita Super Administrator Application</name>
-	<description>Configure and administer the platform (technical user only)</description>
+	<description>This application allows to configure and administer the platform (technical user only)</description>
 
 	<properties>
 		<web.pages.dir>${project.build.directory}/bos-distrib/web_page</web.pages.dir>
