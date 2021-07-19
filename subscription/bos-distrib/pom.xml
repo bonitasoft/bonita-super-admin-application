@@ -7,7 +7,7 @@
     <artifactId>${artifactId}</artifactId>
     <version>${application.version}</version>
 
-    <name>${name}</name>
-    <description>${description}</description>
+    <name>${application.name}</name>
+    <description>${application.description}</description>
 
 </project>
