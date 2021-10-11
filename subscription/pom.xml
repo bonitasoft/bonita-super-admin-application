@@ -16,8 +16,6 @@
 
 	<properties>
 		<application.version>1.0-EE</application.version>
-		<web.pages.dir>${project.build.directory}/bos-distrib/web_page</web.pages.dir>
-		<web.widgets.dir>${project.build.directory}/bos-distrib/web_widgets</web.widgets.dir>
 	</properties>
 
 	<dependencies>
