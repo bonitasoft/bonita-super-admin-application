@@ -5,7 +5,7 @@
         <description>${application.description}</description>
         <iconPath>bonita-super-admin-application.png</iconPath>
         <applicationPages>
-            <applicationPage customPage="custompage_tenantStatusBonitaV2" token="bpm-services"/>
+            <applicationPage customPage="custompage_tenantStatusBonitaV3" token="bpm-services"/>
             <applicationPage customPage="custompage_adminUserDetailsBonita" token="admin-user-details"/>
             <applicationPage customPage="custompage_adminApplicationListBonita" token="application-list"/>
             <applicationPage customPage="custompage_adminApplicationDetailsBonita" token="admin-application-details"/>
