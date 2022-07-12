@@ -15,7 +15,7 @@
 	<packaging>pom</packaging>
 
 	<properties>
-		<application.version>2.0-EE</application.version>
+		<application.version>3.0-EE</application.version>
 	</properties>
 
 	<dependencies>
