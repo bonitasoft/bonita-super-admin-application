@@ -15,7 +15,7 @@
             <applicationPage customPage="custompage_adminRoleListBonitaV3" token="role-list"/>
             <applicationPage customPage="custompage_adminProfileListBonitaV3" token="profile-list"/>
             <applicationPage customPage="custompage_adminInstallExportOrganizationBonitaV1" token="install-export-organization"/>
-            <applicationPage customPage="custompage_adminResourceListBonitaV3" token="resource-list"/>
+            <applicationPage customPage="custompage_adminResourceListBonitaV6" token="resource-list"/>
         </applicationPages>
         <applicationMenus>
             <applicationMenu applicationPage="bpm-services">
