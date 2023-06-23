@@ -10,7 +10,7 @@
             <applicationPage customPage="custompage_adminApplicationListBonita" token="application-list"/>
             <applicationPage customPage="custompage_adminApplicationDetailsBonita" token="admin-application-details"/>
             <applicationPage customPage="custompage_adminBDMBonita" token="bdm"/>
-            <applicationPage customPage="custompage_adminUserListBonitaV3" token="user-list"/>
+            <applicationPage customPage="custompage_adminUserListBonitaV7" token="user-list"/>
             <applicationPage customPage="custompage_adminGroupListBonitaV3" token="group-list"/>
             <applicationPage customPage="custompage_adminRoleListBonitaV3" token="role-list"/>
             <applicationPage customPage="custompage_adminProfileListBonitaV3" token="profile-list"/>
