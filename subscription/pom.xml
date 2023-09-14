@@ -11,6 +11,7 @@
 		<relativePath>../community</relativePath>
 	</parent>
 
+    <groupId>com.bonitasoft.web.application</groupId>
 	<artifactId>bonita-super-admin-application-sp</artifactId>
 	<packaging>pom</packaging>
 
@@ -27,33 +28,4 @@
 		</dependency>
 	</dependencies>
 
-	<build>
-		<plugins>
-			<plugin>
-				<artifactId>maven-dependency-plugin</artifactId>
-				<executions>
-					<execution>
-						<id>get-super-admin-application-zip</id>
-						<phase>generate-sources</phase>
-						<goals>
-							<goal>unpack</goal>
-						</goals>
-						<configuration>
-							<artifactItems>
-								<artifactItem>
-									<groupId>org.bonitasoft.web.application</groupId>
-									<artifactId>bonita-super-admin-application</artifactId>
-									<version>${project.version}</version>
-									<type>zip</type>
-								</artifactItem>
-							</artifactItems>
-							<outputDirectory>${project.build.directory}/application_zip</outputDirectory>
-							<overWriteReleases>true</overWriteReleases>
-							<overWriteSnapshots>true</overWriteSnapshots>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-		</plugins>
-	</build>
 </project>
