@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <applications xmlns="http://documentation.bonitasoft.com/application-xml-schema/1.0">
     <application token="superAdminApp" version="${application.version}" profile="_BONITA_INTERNAL_PROFILE_SUPER_ADMIN" homePage="bpm-services" state="ACTIVATED" layout="custompage_BonitaLayoutV14" theme="custompage_themeBonita">
-        <displayName>${application.name}</displayName>
-        <description>${application.description}</description>
+        <displayName>${project.name}</displayName>
+        <description>${project.description}</description>
         <iconPath>bonita-super-admin-application.png</iconPath>
         <applicationPages>
             <applicationPage customPage="custompage_tenantStatusBonitaV3" token="bpm-services"/>

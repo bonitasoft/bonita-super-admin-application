@@ -14,6 +14,13 @@
     <groupId>com.bonitasoft.web.application</groupId>
 	<artifactId>bonita-super-admin-application-sp</artifactId>
 	<packaging>pom</packaging>
+	
+	<licenses>
+        <license>
+          <name>Bonitasoft Software License</name>
+          <url>http://www.bonitasoft.com</url>
+        </license>
+    </licenses> 
 
 	<properties>
 		<application.version>4.0-EE</application.version>
