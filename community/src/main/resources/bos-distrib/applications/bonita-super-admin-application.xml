@@ -5,7 +5,7 @@
         <description>${project.description}</description>
         <iconPath>bonita-super-admin-application.png</iconPath>
         <applicationPages>
-            <applicationPage customPage="custompage_tenantStatusBonitaV3" token="bpm-services"/>
+            <applicationPage customPage="custompage_platformMaintenanceBonita" token="platform-maintenance"/>
             <applicationPage customPage="custompage_adminUserDetailsBonita" token="admin-user-details"/>
             <applicationPage customPage="custompage_adminApplicationListBonita" token="application-list"/>
             <applicationPage customPage="custompage_adminApplicationDetailsBonita" token="admin-application-details"/>
@@ -18,8 +18,8 @@
             <applicationPage customPage="custompage_adminResourceListBonitaV10" token="resource-list"/>
         </applicationPages>
         <applicationMenus>
-            <applicationMenu applicationPage="bpm-services">
-                <displayName>BPM services</displayName>
+            <applicationMenu applicationPage="platform-maintenance">
+                <displayName>Platform maintenance</displayName>
             </applicationMenu>
             <applicationMenu>
                 <displayName>Organization</displayName>
