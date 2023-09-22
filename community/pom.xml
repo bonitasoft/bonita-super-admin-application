@@ -195,7 +195,7 @@
 							<artifactItems>
 								<artifactItem>
 									<groupId>org.bonitasoft.web.page</groupId>
-									<artifactId>page-tenant-status</artifactId>
+									<artifactId>page-platform-maintenance</artifactId>
 									<version>${project.version}</version>
 									<classifier>sources</classifier>
 									<type>zip</type>
