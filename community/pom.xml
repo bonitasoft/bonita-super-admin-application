@@ -36,7 +36,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <application.version>5.0</application.version>
+        <application.version>6.0</application.version>
         <web.pages.dir>${project.build.outputDirectory}/bos-distrib/web_page</web.pages.dir>
         <web.widgets.dir>${project.build.outputDirectory}/bos-distrib/web_widgets</web.widgets.dir>
         <web.fragments.dir>${project.build.outputDirectory}/bos-distrib/web_fragments</web.fragments.dir>
@@ -54,7 +54,7 @@
     <dependencies>
         <dependency>
             <groupId>org.bonitasoft.web.page</groupId>
-            <artifactId>page-tenant-status</artifactId>
+            <artifactId>page-platform-maintenance</artifactId>
             <version>${project.version}</version>
             <type>zip</type>
         </dependency>
