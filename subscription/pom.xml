@@ -23,7 +23,7 @@
     </licenses> 
 
     <properties>
-        <application.version>6.0-EE</application.version>
+        <application.version>5.0-EE</application.version>
     </properties>
 
     <dependencies>
