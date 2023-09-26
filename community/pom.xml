@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    child.project.url.inherit.append.path="false"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         child.project.url.inherit.append.path="false"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.bonitasoft.web.application</groupId>
     <artifactId>bonita-super-admin-application</artifactId>
@@ -28,7 +28,8 @@
             <organizationUrl>https://www.bonitasoft.com</organizationUrl>
         </developer>
     </developers>
-    <scm child.scm.connection.inherit.append.path="false" child.scm.developerConnection.inherit.append.path="false" child.scm.url.inherit.append.path="false">
+    <scm child.scm.connection.inherit.append.path="false" child.scm.developerConnection.inherit.append.path="false"
+         child.scm.url.inherit.append.path="false">
         <connection>scm:git:git@github.com:bonitasoft/bonita-super-admin-application.git</connection>
         <developerConnection>scm:git:git@github.com:bonitasoft/bonita-super-admin-application.git</developerConnection>
         <url>https://github.com/bonitasoft/bonita-super-admin-application</url>
@@ -127,10 +128,10 @@
         </dependency>
     </dependencies>
 
-	<build>
-		<pluginManagement>
-			<plugins>
-              <plugin>
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
                     <artifactId>maven-assembly-plugin</artifactId>
                     <version>${maven-assembly-plugin.version}</version>
                     <configuration>
@@ -146,172 +147,172 @@
                     <version>${maven-resources-plugin.version}</version>
                 </plugin>
                 <plugin>
-                      <groupId>org.codehaus.gmavenplus</groupId>
-                      <artifactId>gmavenplus-plugin</artifactId>
-                      <version>${gmavenplus-plugin.version}</version>
-                      <configuration>
+                    <groupId>org.codehaus.gmavenplus</groupId>
+                    <artifactId>gmavenplus-plugin</artifactId>
+                    <version>${gmavenplus-plugin.version}</version>
+                    <configuration>
                         <bindAllProjectProperties>true</bindAllProjectProperties>
                         <bindAllSessionUserProperties>true</bindAllSessionUserProperties>
                         <bindPropertiesToSeparateVariables>false</bindPropertiesToSeparateVariables>
-                      </configuration>
-                      <dependencies>
+                    </configuration>
+                    <dependencies>
                         <dependency>
-                          <groupId>org.codehaus.groovy</groupId>
-                          <artifactId>groovy</artifactId>
-                          <version>${groovy.version}</version>
-                          <scope>runtime</scope>
+                            <groupId>org.codehaus.groovy</groupId>
+                            <artifactId>groovy</artifactId>
+                            <version>${groovy.version}</version>
+                            <scope>runtime</scope>
                         </dependency>
                         <dependency>
-                          <groupId>org.codehaus.groovy</groupId>
-                          <artifactId>groovy-ant</artifactId>
-                          <version>${groovy.version}</version>
-                          <scope>runtime</scope>
+                            <groupId>org.codehaus.groovy</groupId>
+                            <artifactId>groovy-ant</artifactId>
+                            <version>${groovy.version}</version>
+                            <scope>runtime</scope>
                         </dependency>
-                      </dependencies>
-                    </plugin>
+                    </dependencies>
+                </plugin>
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>build-helper-maven-plugin</artifactId>
                     <version>${build-helper-maven-plugin.version}</version>
                 </plugin>
                 <plugin>
-                  <groupId>org.codehaus.mojo</groupId>
-                  <artifactId>flatten-maven-plugin</artifactId>
-                  <version>${flatten-maven-plugin.version}</version>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>flatten-maven-plugin</artifactId>
+                    <version>${flatten-maven-plugin.version}</version>
                 </plugin>
-			</plugins>
-		</pluginManagement>
-		<plugins>
-			<plugin>
-				<artifactId>maven-dependency-plugin</artifactId>
-				<executions>
-					<execution>
-						<id>get-bonita-pages-sources</id>
-						<phase>generate-sources</phase>
-						<goals>
-							<goal>unpack</goal>
-						</goals>
-						<configuration>
-							<artifactItems>
-								<artifactItem>
-									<groupId>org.bonitasoft.web.page</groupId>
-									<artifactId>page-platform-maintenance</artifactId>
-									<version>${project.version}</version>
-									<classifier>sources</classifier>
-									<type>zip</type>
-								</artifactItem>
-								<artifactItem>
-									<groupId>org.bonitasoft.web.page</groupId>
-									<artifactId>page-admin-user-list</artifactId>
-									<version>${project.version}</version>
-									<classifier>sources</classifier>
-									<type>zip</type>
-								</artifactItem>
-								<artifactItem>
-									<groupId>org.bonitasoft.web.page</groupId>
-									<artifactId>page-admin-group-list</artifactId>
-									<version>${project.version}</version>
-									<classifier>sources</classifier>
-									<type>zip</type>
-								</artifactItem>
-								<artifactItem>
-									<groupId>org.bonitasoft.web.page</groupId>
-									<artifactId>page-admin-role-list</artifactId>
-									<version>${project.version}</version>
-									<classifier>sources</classifier>
-									<type>zip</type>
-								</artifactItem>
-								<artifactItem>
-									<groupId>org.bonitasoft.web.page</groupId>
-									<artifactId>page-admin-profile-list</artifactId>
-									<version>${project.version}</version>
-									<classifier>sources</classifier>
-									<type>zip</type>
-								</artifactItem>
-								<artifactItem>
-									<groupId>org.bonitasoft.web.page</groupId>
-									<artifactId>page-admin-install-export-organization</artifactId>
-									<version>${project.version}</version>
-									<classifier>sources</classifier>
-									<type>zip</type>
-								</artifactItem>
-								<artifactItem>
-									<groupId>org.bonitasoft.web.page</groupId>
-									<artifactId>page-admin-resource-list</artifactId>
-									<version>${project.version}</version>
-									<classifier>sources</classifier>
-									<type>zip</type>
-								</artifactItem>
-								<artifactItem>
-									<groupId>org.bonitasoft.web.page</groupId>
-									<artifactId>layout-bonita</artifactId>
-									<version>${project.version}</version>
-									<classifier>sources</classifier>
-									<type>zip</type>
-								</artifactItem>
-							</artifactItems>
-							<outputDirectory>${web.pages.dir}</outputDirectory>
-							<overWriteReleases>true</overWriteReleases>
-							<overWriteSnapshots>true</overWriteSnapshots>
-						</configuration>
-					</execution>
-					<execution>
-						<id>get-bonita-layout-widgets</id>
-						<phase>generate-sources</phase>
-						<goals>
-							<goal>unpack</goal>
-						</goals>
-						<configuration>
-							<artifactItems>
-								<artifactItem>
-									<groupId>org.bonitasoft.web.page</groupId>
-									<artifactId>layout-bonita</artifactId>
-									<version>${project.version}</version>
-									<type>zip</type>
-									<fileMappers>
-										<org.codehaus.plexus.components.io.filemappers.RegExpFileMapper>
-											<pattern>^\Qresources/widgets/\E</pattern>
-											<replacement>./</replacement>
-										</org.codehaus.plexus.components.io.filemappers.RegExpFileMapper>
-									</fileMappers>
-								</artifactItem>
-							</artifactItems>
-							<includes>resources/widgets/custom*/**</includes>
-							<outputDirectory>${web.widgets.dir}</outputDirectory>
-							<overWriteReleases>true</overWriteReleases>
-							<overWriteSnapshots>true</overWriteSnapshots>
-						</configuration>
-					</execution>
-					<execution>
-						<id>get-bonita-fragments</id>
-						<phase>generate-sources</phase>
-						<goals>
-							<goal>unpack</goal>
-						</goals>
-						<configuration>
-							<artifactItems>
-								<artifactItem>
-									<groupId>org.bonitasoft.web.page</groupId>
-									<artifactId>page-admin-user-list</artifactId>
-									<version>${project.version}</version>
-									<type>zip</type>
-									<fileMappers>
-										<org.codehaus.plexus.components.io.filemappers.RegExpFileMapper>
-											<pattern>^\Qresources/fragments/\E</pattern>
-											<replacement>./</replacement>
-										</org.codehaus.plexus.components.io.filemappers.RegExpFileMapper>
-									</fileMappers>
-								</artifactItem>
-							</artifactItems>
-							<includes>resources/fragments/*/**</includes>
-							<outputDirectory>${web.fragments.dir}</outputDirectory>
-							<overWriteReleases>true</overWriteReleases>
-							<overWriteSnapshots>true</overWriteSnapshots>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>get-bonita-pages-sources</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>unpack</goal>
+                        </goals>
+                        <configuration>
+                            <artifactItems>
+                                <artifactItem>
+                                    <groupId>org.bonitasoft.web.page</groupId>
+                                    <artifactId>page-platform-maintenance</artifactId>
+                                    <version>${project.version}</version>
+                                    <classifier>sources</classifier>
+                                    <type>zip</type>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.bonitasoft.web.page</groupId>
+                                    <artifactId>page-admin-user-list</artifactId>
+                                    <version>${project.version}</version>
+                                    <classifier>sources</classifier>
+                                    <type>zip</type>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.bonitasoft.web.page</groupId>
+                                    <artifactId>page-admin-group-list</artifactId>
+                                    <version>${project.version}</version>
+                                    <classifier>sources</classifier>
+                                    <type>zip</type>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.bonitasoft.web.page</groupId>
+                                    <artifactId>page-admin-role-list</artifactId>
+                                    <version>${project.version}</version>
+                                    <classifier>sources</classifier>
+                                    <type>zip</type>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.bonitasoft.web.page</groupId>
+                                    <artifactId>page-admin-profile-list</artifactId>
+                                    <version>${project.version}</version>
+                                    <classifier>sources</classifier>
+                                    <type>zip</type>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.bonitasoft.web.page</groupId>
+                                    <artifactId>page-admin-install-export-organization</artifactId>
+                                    <version>${project.version}</version>
+                                    <classifier>sources</classifier>
+                                    <type>zip</type>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.bonitasoft.web.page</groupId>
+                                    <artifactId>page-admin-resource-list</artifactId>
+                                    <version>${project.version}</version>
+                                    <classifier>sources</classifier>
+                                    <type>zip</type>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.bonitasoft.web.page</groupId>
+                                    <artifactId>layout-bonita</artifactId>
+                                    <version>${project.version}</version>
+                                    <classifier>sources</classifier>
+                                    <type>zip</type>
+                                </artifactItem>
+                            </artifactItems>
+                            <outputDirectory>${web.pages.dir}</outputDirectory>
+                            <overWriteReleases>true</overWriteReleases>
+                            <overWriteSnapshots>true</overWriteSnapshots>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>get-bonita-layout-widgets</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>unpack</goal>
+                        </goals>
+                        <configuration>
+                            <artifactItems>
+                                <artifactItem>
+                                    <groupId>org.bonitasoft.web.page</groupId>
+                                    <artifactId>layout-bonita</artifactId>
+                                    <version>${project.version}</version>
+                                    <type>zip</type>
+                                    <fileMappers>
+                                        <org.codehaus.plexus.components.io.filemappers.RegExpFileMapper>
+                                            <pattern>^\Qresources/widgets/\E</pattern>
+                                            <replacement>./</replacement>
+                                        </org.codehaus.plexus.components.io.filemappers.RegExpFileMapper>
+                                    </fileMappers>
+                                </artifactItem>
+                            </artifactItems>
+                            <includes>resources/widgets/custom*/**</includes>
+                            <outputDirectory>${web.widgets.dir}</outputDirectory>
+                            <overWriteReleases>true</overWriteReleases>
+                            <overWriteSnapshots>true</overWriteSnapshots>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>get-bonita-fragments</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>unpack</goal>
+                        </goals>
+                        <configuration>
+                            <artifactItems>
+                                <artifactItem>
+                                    <groupId>org.bonitasoft.web.page</groupId>
+                                    <artifactId>page-admin-user-list</artifactId>
+                                    <version>${project.version}</version>
+                                    <type>zip</type>
+                                    <fileMappers>
+                                        <org.codehaus.plexus.components.io.filemappers.RegExpFileMapper>
+                                            <pattern>^\Qresources/fragments/\E</pattern>
+                                            <replacement>./</replacement>
+                                        </org.codehaus.plexus.components.io.filemappers.RegExpFileMapper>
+                                    </fileMappers>
+                                </artifactItem>
+                            </artifactItems>
+                            <includes>resources/fragments/*/**</includes>
+                            <outputDirectory>${web.fragments.dir}</outputDirectory>
+                            <overWriteReleases>true</overWriteReleases>
+                            <overWriteSnapshots>true</overWriteSnapshots>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
                 <executions>
@@ -395,34 +396,34 @@
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>flatten-maven-plugin</artifactId>
                 <executions>
-                  <!-- enable flattening -->
-                  <execution>
-                    <id>flatten</id>
-                    <goals>
-                      <goal>flatten</goal>
-                    </goals>
-                    <phase>process-resources</phase>
-                    <configuration>
-                      <flattenMode>ossrh</flattenMode>
-                      <updatePomFile>true</updatePomFile>
-                      <pomElements>
-                        <dependencies>remove</dependencies>
-                      </pomElements>
-                    </configuration>
-                  </execution>
-                  <!-- ensure proper cleanup -->
-                  <execution>
-                    <id>flatten.clean</id>
-                    <goals>
-                      <goal>clean</goal>
-                    </goals>
-                    <phase>clean</phase>
-                  </execution>
+                    <!-- enable flattening -->
+                    <execution>
+                        <id>flatten</id>
+                        <goals>
+                            <goal>flatten</goal>
+                        </goals>
+                        <phase>process-resources</phase>
+                        <configuration>
+                            <flattenMode>ossrh</flattenMode>
+                            <updatePomFile>true</updatePomFile>
+                            <pomElements>
+                                <dependencies>remove</dependencies>
+                            </pomElements>
+                        </configuration>
+                    </execution>
+                    <!-- ensure proper cleanup -->
+                    <execution>
+                        <id>flatten.clean</id>
+                        <goals>
+                            <goal>clean</goal>
+                        </goals>
+                        <phase>clean</phase>
+                    </execution>
                 </executions>
-              </plugin>
-		</plugins>
-	</build>
-	    <profiles>
+            </plugin>
+        </plugins>
+    </build>
+    <profiles>
         <profile>
             <id>release</id>
             <build>
