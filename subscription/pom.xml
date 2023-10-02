@@ -15,6 +15,7 @@
     <artifactId>bonita-super-admin-application-sp</artifactId>
     <packaging>pom</packaging>
 
+    <name>Bonita Super Administrator Application</name>
     <licenses>
         <license>
             <name>Bonitasoft Software License</name>
