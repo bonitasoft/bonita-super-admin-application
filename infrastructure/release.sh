@@ -24,7 +24,7 @@ usage() {
     echo -e "    \e[4m$name\e[0m --help"
     echo ""
     echo -e "\e[1mDESCRIPTION\e[0m"
-    echo "    Perform a bonita-admin-application release based on current branch."
+    echo "    Perform a bonita-super-admin-application release based on current branch."
     echo "      - Change versions to <version> where needed (mostly in pom.xml)"
     echo "      - Create and push tag <version>"
     echo ""
