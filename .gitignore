@@ -6,4 +6,7 @@
 .DS_Store
 .project
 .settings/
+
 .flattened-pom.xml
+pom.xml.versionsBackup
+
