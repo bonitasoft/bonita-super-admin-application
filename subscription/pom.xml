@@ -24,7 +24,7 @@
     </licenses>
 
     <properties>
-        <application.version>5.2-EE</application.version>
+        <application.version>5.3-EE</application.version>
     </properties>
 
     <dependencies>
