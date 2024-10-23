@@ -4,7 +4,7 @@
         <displayName>${project.name}</displayName>
         <description>${project.description}</description>
         <iconPath>bonita-super-admin-application.png</iconPath>
-        <applicationPages>9
+        <applicationPages>
             <applicationPage customPage="custompage_platformMaintenanceBonitaV1" token="platform-maintenance"/>
             <applicationPage customPage="custompage_adminUserDetailsBonita" token="admin-user-details"/>
             <applicationPage customPage="custompage_adminApplicationListBonita" token="application-list"/>
