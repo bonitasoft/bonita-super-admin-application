@@ -34,6 +34,12 @@
       <version>${project.version}</version>
       <type>zip</type>
     </dependency>
+    <dependency>
+      <groupId>org.bonitasoft.web.page</groupId>
+      <artifactId>page-admin-data-retention</artifactId>
+      <version>${project.version}</version>
+      <type>zip</type>
+    </dependency>
   </dependencies>
 
 </project>
