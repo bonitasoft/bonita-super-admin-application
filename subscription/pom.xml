@@ -24,13 +24,19 @@
   </licenses>
 
   <properties>
-    <application.version>6.0-EE</application.version>
+    <application.version>7.0-EE</application.version>
   </properties>
 
   <dependencies>
     <dependency>
       <groupId>org.bonitasoft.web.page</groupId>
       <artifactId>page-admin-license</artifactId>
+      <version>${project.version}</version>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>com.bonitasoft.web.page</groupId>
+      <artifactId>page-admin-data-retention</artifactId>
       <version>${project.version}</version>
       <type>zip</type>
     </dependency>

@@ -17,6 +17,7 @@
             <applicationPage customPage="custompage_adminInstallExportOrganizationBonitaV2" token="install-export-organization"/>
             <applicationPage customPage="custompage_adminResourceListBonitaV13" token="resource-list"/>
             <applicationPage customPage="custompage_adminLicenseBonita" token="license"/>
+            <applicationPage customPage="custompage_adminDataRetentionBonita" token="data-retention"/>
         </applicationPages>
         <applicationMenus>
             <applicationMenu applicationPage="platform-maintenance">
@@ -42,8 +43,16 @@
                     </applicationMenu>
                 </applicationMenus>
             </applicationMenu>
-            <applicationMenu applicationPage="bdm">
+            <applicationMenu>
                 <displayName>BDM</displayName>
+                <applicationMenus>
+                    <applicationMenu applicationPage="bdm">
+                        <displayName>BDM definition</displayName>
+                    </applicationMenu>
+                    <applicationMenu applicationPage="data-retention">
+                        <displayName>Data retention (GDPR)</displayName>
+                    </applicationMenu>
+                </applicationMenus>
             </applicationMenu>
             <applicationMenu applicationPage="resource-list">
                 <displayName>Resources</displayName>
