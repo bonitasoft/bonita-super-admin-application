@@ -50,7 +50,7 @@
                         <displayName>BDM definition</displayName>
                     </applicationMenu>
                     <applicationMenu applicationPage="data-retention">
-                        <displayName>Data Retention (GDPR)</displayName>
+                        <displayName>Data retention (GDPR)</displayName>
                     </applicationMenu>
                 </applicationMenus>
             </applicationMenu>
